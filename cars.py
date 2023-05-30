@@ -1,7 +1,7 @@
 import csv
 
 # Open the input file for reading
-with open('car_data/car_data.csv', 'r') as file:
+with open('car_data.csv', 'r') as file:
     reader = csv.DictReader(file)
     data = [row['make'] for row in reader]
 
